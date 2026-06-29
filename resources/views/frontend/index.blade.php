@@ -497,7 +497,7 @@
               "@@context": "https://schema.org",
               "@@type": "Store",
               "name": "madeliadesigns",
-              "image": "/images/brands/I9uMBss51oRgkCJSSWlcQGTPz9r4vqvquN-1778432057.png",
+              "image": "https://madeliadesigns.com/images/brands/I9uMBss51oRgkCJSSWlcQGTPz9r4vqvquN-1778432057.png",
               "address": {
                 "@@type": "PostalAddress",
                 "streetAddress": "",
@@ -508,7 +508,7 @@
               },
               "telephone": "",
               "openingHours": "Mo-Sa 10:00-20:00",
-              "url": ""
+              "url": "https://madeliadesigns.com"
             }
     </script>
 
@@ -1028,7 +1028,7 @@
              <div class="swiper-wrapper">
                                       <div class="swiper-slide">
                          <div class="wrap-slider">
-                             <img src="/images/categories/IfkYYDdKgokGz1eGRNUKPk68xoHsNWFlws-1778527672.jpg" alt="fashion-slideshow">
+                             <img src="https://madeliadesigns.com/images/categories/IfkYYDdKgokGz1eGRNUKPk68xoHsNWFlws-1778527672.jpg" alt="fashion-slideshow">
                              <div class="box-content">
                                  <div class="content-slider">
                                      <div class="box-title-slider">
@@ -1067,7 +1067,7 @@
                 <a href="category_necklace-sets-and-chokers-HKCSS.html" class="category-card">
 
                     <div class="img-wrapper">
-                        <img src="/images/categories/xjWAvmzTroNoeieXNO0g5gbnQDY57ENnYJ-1778928398.jpg" alt="Necklace Sets and Chokers">
+                        <img src="https://madeliadesigns.com/images/categories/xjWAvmzTroNoeieXNO0g5gbnQDY57ENnYJ-1778928398.jpg" alt="Necklace Sets and Chokers">
                     </div>
 
                     <p class="category-name">
@@ -1080,7 +1080,7 @@
                 <a href="category_mangalsutra-0Brv3.html" class="category-card">
 
                     <div class="img-wrapper">
-                        <img src="/images/categories/ingAP9tvT8yXnyUpZVCRTVk3NBLyD7rPQT-1778928099.jpg" alt="Mangalsutra">
+                        <img src="https://madeliadesigns.com/images/categories/ingAP9tvT8yXnyUpZVCRTVk3NBLyD7rPQT-1778928099.jpg" alt="Mangalsutra">
                     </div>
 
                     <p class="category-name">
@@ -1093,7 +1093,7 @@
                 <a href="category_harams-AUy1m.html" class="category-card">
 
                     <div class="img-wrapper">
-                        <img src="/images/categories/yoHrtMyARqJiUYbQgXTOd0Ke95THnhGmz1-1778927717.jpg" alt="Harams">
+                        <img src="https://madeliadesigns.com/images/categories/yoHrtMyARqJiUYbQgXTOd0Ke95THnhGmz1-1778927717.jpg" alt="Harams">
                     </div>
 
                     <p class="category-name">
@@ -1106,7 +1106,7 @@
                 <a href="category_invisible-chains-and-pendants-tidrw.html" class="category-card">
 
                     <div class="img-wrapper">
-                        <img src="/images/categories/hZLGIusXBye8KsgYr0gfWf0Slu11qk1sfC-1778928789.jpg" alt="Invisible Chains and Pendants">
+                        <img src="https://madeliadesigns.com/images/categories/hZLGIusXBye8KsgYr0gfWf0Slu11qk1sfC-1778928789.jpg" alt="Invisible Chains and Pendants">
                     </div>
 
                     <p class="category-name">
@@ -1119,7 +1119,7 @@
                 <a href="category_hair-accessories-ZsjhM.html" class="category-card">
 
                     <div class="img-wrapper">
-                        <img src="/images/categories/HICdSuw1hk76WxtxPnJvemCB9UzHzrvdz8-1782126320.PNG" alt="Hair Accessories">
+                        <img src="https://madeliadesigns.com/images/categories/HICdSuw1hk76WxtxPnJvemCB9UzHzrvdz8-1782126320.PNG" alt="Hair Accessories">
                     </div>
 
                     <p class="category-name">
@@ -1132,7 +1132,7 @@
                 <a href="category_saree-Q3IJM.html" class="category-card">
 
                     <div class="img-wrapper">
-                        <img src="/images/categories/2C5U9VsbnS0E9CKs8f3sr9szSF8vJwWLxC-1782126036.jpeg" alt="Saree">
+                        <img src="https://madeliadesigns.com/images/categories/2C5U9VsbnS0E9CKs8f3sr9szSF8vJwWLxC-1782126036.jpeg" alt="Saree">
                     </div>
 
                     <p class="category-name">
