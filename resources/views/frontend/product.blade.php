@@ -780,20 +780,28 @@
 <div class="thumbs-slider">
 <div class="swiper tf-product-media-thumbs other-image-zoom" data-direction="vertical" dir="ltr">
 <div class="swiper-wrapper stagger-wrap">
-<div class="swiper-slide stagger-item" data-color="0">
+@php
+    $galleries = is_string($product->gallery_images) ? json_decode($product->gallery_images, true) : ($product->gallery_images ?? []);
+    if(empty($galleries)) $galleries = [$product->image_path];
+@endphp
+@foreach($galleries as $index => $gallery_img)
+<div class="swiper-slide stagger-item" data-color="{{ $index }}">
 <div class="item">
-<img alt="" class="lazyload" data-src="/assets/images/wlUw9c0XpQke9qLccbhX9uGyg4OMb8kcSe-1779953968.jpeg" src="{{ $product->image_path }}"/>
+<img alt="" class="lazyload" data-src="{{ $gallery_img }}" src="{{ $gallery_img }}"/>
 </div>
 </div>
+@endforeach
 </div>
 </div>
 <div class="swiper tf-product-media-main" dir="ltr" id="gallery-swiper-started">
 <div class="swiper-wrapper">
-<div class="swiper-slide" data-color="gray">
-<a class="item" data-pswp-height="400px" data-pswp-width="600px" href="/images/products/wlUw9c0XpQke9qLccbhX9uGyg4OMb8kcSe-1779953968.jpeg" target="_blank">
-<img alt="" class="tf-image-zoom lazyload" data-src="/assets/images/wlUw9c0XpQke9qLccbhX9uGyg4OMb8kcSe-1779953968.jpeg" data-zoom="/images/products/wlUw9c0XpQke9qLccbhX9uGyg4OMb8kcSe-1779953968.jpeg" src="{{ $product->image_path }}"/>
+@foreach($galleries as $index => $gallery_img)
+<div class="swiper-slide" data-color="{{ $index }}">
+<a class="item" data-pswp-height="400px" data-pswp-width="600px" href="{{ $gallery_img }}" target="_blank">
+<img alt="" class="tf-image-zoom lazyload" data-src="{{ $gallery_img }}" data-zoom="{{ $gallery_img }}" src="{{ $gallery_img }}"/>
 </a>
 </div>
+@endforeach
 </div>
 </div>
 </div>
@@ -836,23 +844,28 @@
 </div>
 </div>
 <div class="tf-product-info-choose-option">
+@php
+    $variants = is_string($product->variants) ? json_decode($product->variants, true) : ($product->variants ?? []);
+@endphp
+@if(!empty($variants))
 <div class="variant-picker-item">
 <div class="d-flex justify-content-between mb_12">
 <div class="variant-picker-label">
-                                                Size:<span class="text-title variant-picker-label-value">
-                                                    Free  size <s-quantity>  -  (1)</s-quantity>
-</span>
+    Size: <span class="text-title variant-picker-label-value"></span>
 </div>
 </div>
 <div class="variant-picker-values gap12">
-<input id="values-Free  size" name="size1" type="radio"/>
-<label class="p-2 style-text" for="values-Free  size" style="border-radius: 0; width: auto; border-radius: 10px; border: 1px solid black" wire:click="$set('size_id', '1')">
+@foreach($variants as $index => $variant)
+<input id="values-{{ $index }}" name="size1" type="radio" {{ $index == 0 ? 'checked' : '' }}/>
+<label class="p-2 style-text" for="values-{{ $index }}" style="border-radius: 0; width: auto; border-radius: 10px; border: 1px solid black" wire:click="$set('size_id', '{{ $variant }}')">
 <span class="text-title">
-                                                        Free  size
-                                                    </span>
+    {{ $variant }}
+</span>
 </label>
+@endforeach
 </div>
 </div>
+@endif
 <div class="tf-product-info-quantity">
 <div class="title mb_12">Quantity:</div>
 <div class="wg-quantity">

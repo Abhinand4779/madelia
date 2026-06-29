@@ -1,41 +1,64 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Product;
+use App\Models\Category;
+use Illuminate\Http\Request;
 
 // User Routes (Frontend)
-Route::get('/', function () { return view('frontend.index'); })->name('home');
+Route::get('/', function () { 
+    $products = Product::all();
+    return view('frontend.index', compact('products')); 
+})->name('home');
 Route::get('/shop', function () { 
-    $products = \App\Models\Product::all();
+    $products = Product::all();
     return view('frontend.shop', compact('products')); 
 })->name('shop');
 
 // Catch-all for category and subcategory pages (points to shop)
-Route::get('/category_{name}', function () { 
-    $products = \App\Models\Product::all();
+Route::get('/category_{name}', function ($name) { 
+    $baseName = preg_replace('/-[a-zA-Z0-9]+$/', '', $name);
+    $baseName = str_replace(['-', '.html'], [' ', ''], $baseName);
+    
+    $category = Category::where('name', 'LIKE', '%' . $baseName . '%')->first();
+    if ($category) {
+        $products = Product::where('category_id', $category->id)->get();
+    } else {
+        $products = Product::all();
+    }
     return view('frontend.shop', compact('products')); 
 })->where('name', '.*');
 
-Route::get('/subcategory_{name}', function () { 
-    $products = \App\Models\Product::all();
+Route::get('/subcategory_{name}', function ($name) { 
+    $baseName = preg_replace('/-[a-zA-Z0-9]+$/', '', $name);
+    $baseName = str_replace(['-', '.html'], [' ', ''], $baseName);
+    
+    // Subcategories could just search by name too
+    $category = Category::where('name', 'LIKE', '%' . $baseName . '%')->first();
+    if ($category) {
+        $products = Product::where('category_id', $category->id)->get();
+    } else {
+        $products = Product::all();
+    }
     return view('frontend.shop', compact('products')); 
 })->where('name', '.*');
 
 // Product routes
-Route::get('/product', function (\Illuminate\Http\Request $request) { 
-    $product = \App\Models\Product::find($request->id);
+Route::get('/product', function (Request $request) { 
+    $product = Product::find($request->id);
     if (!$product) abort(404);
     return view('frontend.product', compact('product')); 
 })->name('product');
 
-Route::get('/product_{name}', function (\Illuminate\Http\Request $request) { 
-    // Fallback if they click an old product link, just load the first product for demo
-    $product = \App\Models\Product::first();
+Route::get('/product_{name}', function ($name) { 
+    // Just load the first product for demo
+    $product = Product::first();
     if (!$product) abort(404);
     return view('frontend.product', compact('product')); 
 })->where('name', '.*');
 
-Route::get('/product.html', function (\Illuminate\Http\Request $request) { 
-    $product = \App\Models\Product::find($request->id);
+Route::get('/product.html', function (Request $request) { 
+    $product = Product::find($request->id);
     if (!$product) abort(404);
     return view('frontend.product', compact('product')); 
 });
@@ -67,7 +90,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/login', function() { return view('admin.login'); })->name('admin.login');
     Route::get('/dashboard', function() { return view('admin.dashboard'); })->name('admin.dashboard');
     Route::get('/product/list', function() { 
-        $products = \App\Models\Product::paginate(100);
+        $products = Product::paginate(100);
         return view('admin.products', compact('products')); 
     })->name('admin.products');
     Route::get('/product/create-or-update', function() { return view('admin.product-create'); })->name('admin.product.create');
@@ -85,5 +108,4 @@ Route::prefix('admin')->group(function () {
     Route::get('/pages', function() { return view('admin.pages'); })->name('admin.pages');
     Route::get('/home-brands', function() { return view('admin.home-brands'); })->name('admin.home-brands');
     Route::get('/main-titles', function() { return view('admin.main-titles'); })->name('admin.main-titles');
-
 });
