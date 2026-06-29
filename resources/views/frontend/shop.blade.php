@@ -1672,6 +1672,571 @@
 <div>
 <h6 class="mb_16">Top Results</h6>
 <div class="tf-grid-layout tf-col-2 lg-col-3 xl-col-4">
+
+@foreach($products as $product)
+<div class="grid card-product" data-wow-delay="0.2s">
+<div class="card-product-wrapper">
+<a class="product-img" href="{{ route('product', ['id' => $product->id]) }}">
+<img alt="image-product" class="lazyload img-product" data-src="{{ $product->image_path }}" src="{{ $product->image_path }}"/>
+<img alt="image-product" class="lazyload img-hover" data-src="{{ $product->image_path }}" src="{{ $product->image_path }}"/>
+</a>
+<div class="variant-wrap size-list">
+<ul class="variant-box">
+<li class="size-item">Free size</li>
+</ul>
+</div>
+<div class="list-product-btn"></div>
+<div class="list-btn-main">
+<a class="btn-main-product" href="{{ route('product', ['id' => $product->id]) }}">View Details</a>
+</div>
+</div>
+<div class="card-product-info">
+<a class="title link" href="{{ route('product', ['id' => $product->id]) }}">{{ $product->name }}</a>
+<span class="price">₹{{ number_format($product->price, 2) }}</span>
+<ul class="list-color-product"></ul>
+</div>
+</div>
+@endforeach
+
+
+</div>
+<div class="card-product-info">
+<a class="title link" href="/product/american-diamond-zircon-necklace-set-with-colored-stones-710fa">
+                                American Diamond Zircon Necklace Set with Colored Stones
+                            </a>
+<span class="price">
+                                                                AU$
+                                32
+                            </span>
+<ul class="list-color-product">
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-4 text-center wd-load view-more-button">
+<button class="tf-loading btn-loadmore tf-btn btn-reset" style="" wire:click="$set('limit', '24')"><span class="text text-btn text-btn-uppercase">Load more</span></button>
+</div>
+</div>
+</section>
+</div>
+<!-- Livewire Component wire-end:sFrIkaC8xk9EzNJUp9zG -->
+<!-- /Iconbox -->
+<!-- Footer -->
+<footer class="footer" id="footer">
+<div class="footer-wrap">
+<div class="footer-body">
+<div class="container">
+<div class="row">
+<div class="col-lg-4">
+<div class="footer-infor">
+<div class="footer-logo">
+<a href="">
+<img alt="" src="/assets/images/I9uMBss51oRgkCJSSWlcQGTPz9r4vqvquN-1778432057.png" style="height: 90px;"/>
+</a>
+</div>
+<div class="footer-address">
+<p>
+</p>
+<a class="tf-btn-default fw-6" href="#">
+<i class="icon-arrowUpRight"></i></a>
+</div>
+<ul class="footer-info">
+<li>
+<i class="icon-mail"></i>
+<p>
+<a class="__cf_email__" data-cfemail="b5d8d4d1d0d9dcd4d1d0c6dcd2dbc6d4c0f5d2d8d4dcd99bd6dad8" href="/cdn-cgi/l/email-protection">[email protected]</a>
+</p>
+</li>
+<li>
+<i class="icon-phone"></i>
+<p>
+</p>
+</li>
+</ul>
+<ul class="tf-social-icon">
+<li><a class="social-instagram" href="https://www.instagram.com/madelia.designs.aus?utm_source=qr&amp;igsh=c3JqamR0cmY3MXVk"><i class="icon icon-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="footer-menu">
+<div class="footer-col-block">
+<div class="footer-heading text-button footer-heading-mobile">
+                                    Categories
+                                </div>
+<div class="tf-collapse-content">
+<ul class="footer-menu-list">
+<li class="text-caption-1">
+<a class="footer-menu_item" href="category_necklace-sets-and-chokers-HKCSS.html">Necklace Sets and Chokers</a>
+</li>
+<li class="text-caption-1">
+<a class="footer-menu_item" href="category_mangalsutra-0Brv3.html">Mangalsutra</a>
+</li>
+<li class="text-caption-1">
+<a class="footer-menu_item" href="category_harams-AUy1m.html">Harams</a>
+</li>
+<li class="text-caption-1">
+<a class="footer-menu_item" href="category_invisible-chains-and-pendants-tidrw.html">Invisible Chains and Pendants</a>
+</li>
+<li class="text-caption-1">
+<a class="footer-menu_item" href="category_hair-accessories-ZsjhM.html">Hair Accessories</a>
+</li>
+<li class="text-caption-1">
+<a class="footer-menu_item" href="category_saree-Q3IJM.html">Saree</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-col-block">
+<div class="footer-heading text-button footer-heading-mobile">
+                                    Information
+                                </div>
+<div class="tf-collapse-content">
+<ul class="footer-menu-list">
+<li class="text-caption-1">
+<a class="footer-menu_item" href="page_return-policy.html"> Return Policy</a>
+</li>
+<li class="text-caption-1">
+<a class="footer-menu_item" href="page_shipping-policy.html"> Shipping Policy</a>
+</li>
+<li class="text-caption-1">
+<a class="footer-menu_item" href="page_privacy-policy.html"> Privacy Policy</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="footer-col-block">
+<div class="footer-heading text-button footer-heading-mobile">
+                                Newletter
+                            </div>
+<div class="tf-collapse-content">
+<div class="footer-newsletter">
+<p class="text-caption-1">Sign up for our newsletter and get 10% off your first
+                                        purchase</p>
+<form @submit.prevent="submitForm" accept-charset="utf-8" class="form-newsletter subscribe-form" data-mailchimp="true" method="post" x-data="subscribeForm()">
+<div class="subscribe-content">
+<fieldset class="email">
+<input aria-required="true" class="subscribe-email" name="email-form" placeholder="Enter your e-mail" tabindex="0" type="email" x-model="email"/>
+</fieldset>
+<div class="button-submit">
+<button class="subscribe-button" type="submit">
+<template x-if="!loading">
+<i class="icon icon-arrowUpRight"></i>
+</template>
+<template x-if="loading">
+<span class="animate-pulse">...</span>
+</template>
+</button>
+</div>
+</div>
+<div class="subscribe-msg" x-text="message"></div>
+</form>
+<div class="tf-cart-checkbox">
+<div class="tf-checkbox-wrapp">
+<input checked="" class="" disabled="" id="footer-Form_agree" name="agree_checkbox" type="checkbox"/>
+<div>
+<i class="icon-check"></i>
+</div>
+</div>
+<label class="text-caption-1" for="footer-Form_agree">
+                                            By clicking subcribe, you agree to the <a class="fw-6 link" href="">Terms of Service</a> and <a class="fw-6 link" href="#">Privacy Policy</a>.
+                                        </label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="footer-bottom-wrap">
+<div class="left">
+<p class="text-caption-1">
+                                    © 2026 madeliadesigns. All Rights Reserved.
+                                </p>
+<div class="tf-cur justify-content-end">
+</div>
+</div>
+<div style="display: flex;gap: 8px;">
+<p class="text-caption-1">Payment:</p>
+<ul>
+<li>
+<img alt="" src="" style="height: 65px;"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    function subscribeForm() {
+        return {
+            email: '',
+            message: '',
+            loading: false,
+
+            async submitForm() {
+                this.loading = true;
+                this.message = '';
+
+                try {
+                    const response = await fetch('/api/subscribe', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json',
+                            'X-CSRF-TOKEN': document.querySelector('meta[name=csrf-token]')?.content
+                        },
+                        body: JSON.stringify({
+                            email: this.email
+                        })
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        this.message = data.message ?? 'Subscribed successfully!';
+                        this.email = '';
+                    } else {
+                        this.message = data.message ?? 'Subscription failed.';
+                    }
+                } catch (error) {
+                    this.message = 'Something went wrong.';
+                } finally {
+                    this.loading = false;
+                }
+            }
+        }
+    }
+</script>
+<!-- /Footer -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet"/>
+<div class="toast-container"></div>
+<style>
+
+
+    @keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(100% + 30px)) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+}
+
+@keyframes fadeSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(100% + 30px)) scale(0.95);
+  }
+}
+
+  .toast-container {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.toast {
+  position: relative;
+  width: 320px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 13px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  display: flex;
+  overflow-x: hidden;
+  align-items: center;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active {
+  animation: fadeSlideIn 0.5s ease forwards;
+  transform: translateX(0%);
+  display: inherit;
+}
+
+.toast.removing {
+  animation: fadeSlideOut 0.4s ease forwards;
+}
+
+.toast .toast-content {
+  display: flex;
+  align-items: start;
+}
+
+.toast-content .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  min-width: 35px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.message .text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.toast .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close:hover {
+  opacity: 1;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+}
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+}
+
+.progress.active:before {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
+
+/* Toast Type Colors */
+.toast.success .icon { color: rgb(25 135 84); }
+.toast.error .icon { color: rgb(220 53 69); }
+.toast.warning .icon { color: rgb(255 193 7); }
+.toast.info .icon { color: rgb(13 202 240); }
+
+.toast.success .progress:before { background: rgb(25 135 84); }
+.toast.error .progress:before { background: rgb(220 53 69); }
+.toast.warning .progress:before { background: rgb(255 193 7); }
+.toast.info .progress:before { background: rgb(13 202 240); }
+
+
+</style>
+<script>
+
+    function showToast(message, type = "success") {
+        const toastContainer = document.querySelector(".toast-container");
+
+        const toast = document.createElement("div");
+        toast.classList.add("toast", type);
+        toast.classList.add("asset-toast")
+
+        toast.innerHTML = `
+          <div class="toast-content">
+            <i class="bi icon bi-${getIcon(type)}"></i>
+            <div class="message">
+              <span class="text text-1">${capitalize(type)}</span>
+              <span class="text text-2">${message}</span>
+            </div>
+          </div>
+          <i class="bi bi-x-lg close"></i>
+          <div class="progress active"></div>
+        `;
+
+        toastContainer.appendChild(toast);
+        let showToast = setTimeout(() => {
+          void toast.offsetHeight;
+          toast.classList.add("active");
+        }, 1);
+
+        const progress = toast.querySelector(".progress");
+        const closeIcon = toast.querySelector(".close");
+
+        // Auto-remove toast after 5s
+        const timer1 = setTimeout(() => {
+          toast.classList.remove("removing");
+          toast.classList.remove("active");
+        }, 5000);
+
+        const timer2 = setTimeout(() => {
+          toast.classList.remove("removing");
+          progress.classList.remove("active");
+          setTimeout(() => toast.remove(), 400);
+        }, 5300);
+
+        // Manual close
+        closeIcon.addEventListener("click", () => {
+          toast.classList.remove("active");
+          clearTimeout(timer1);
+          clearTimeout(timer2);
+          clearTimeout(showToast);
+          setTimeout(() => toast.remove(), 400);
+        });
+      }
+
+      function getIcon(type) {
+        switch (type) {
+          case "success": return "check-circle-fill";
+          case "error": return "x-circle-fill";
+          case "warning": return "exclamation-triangle-fill";
+          case "info": return "info-circle-fill";
+          default: return "check-circle-fill";
+        }
+      }
+
+      function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+      }
+
+
+
+
+      // Example Usage:
+      
+
+       window.addEventListener('notify:front', event => {
+          showToast(event.detail.message, event.detail.type ?? 'success');
+       })
+
+</script>
+<!-- toolbar-bottom -->
+<div class="tf-toolbar-bottom">
+<div class="toolbar-item">
+<a href="">
+<div class="toolbar-icon">
+<svg class="icon" fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.125 3.125H4.375C4.04348 3.125 3.72554 3.2567 3.49112 3.49112C3.2567 3.72554 3.125 4.04348 3.125 4.375V8.125C3.125 8.45652 3.2567 8.77446 3.49112 9.00888C3.72554 9.2433 4.04348 9.375 4.375 9.375H8.125C8.45652 9.375 8.77446 9.2433 9.00888 9.00888C9.2433 8.77446 9.375 8.45652 9.375 8.125V4.375C9.375 4.04348 9.2433 3.72554 9.00888 3.49112C8.77446 3.2567 8.45652 3.125 8.125 3.125ZM8.125 8.125H4.375V4.375H8.125V8.125ZM15.625 3.125H11.875C11.5435 3.125 11.2255 3.2567 10.9911 3.49112C10.7567 3.72554 10.625 4.04348 10.625 4.375V8.125C10.625 8.45652 10.7567 8.77446 10.9911 9.00888C11.2255 9.2433 11.5435 9.375 11.875 9.375H15.625C15.9565 9.375 16.2745 9.2433 16.5089 9.00888C16.7433 8.77446 16.875 8.45652 16.875 8.125V4.375C16.875 4.04348 16.7433 3.72554 16.5089 3.49112C16.2745 3.2567 15.9565 3.125 15.625 3.125ZM15.625 8.125H11.875V4.375H15.625V8.125ZM8.125 10.625H4.375C4.04348 10.625 3.72554 10.7567 3.49112 10.9911C3.2567 11.2255 3.125 11.5435 3.125 11.875V15.625C3.125 15.9565 3.2567 16.2745 3.49112 16.5089C3.72554 16.7433 4.04348 16.875 4.375 16.875H8.125C8.45652 16.875 8.77446 16.7433 9.00888 16.5089C9.2433 16.2745 9.375 15.9565 9.375 15.625V11.875C9.375 11.5435 9.2433 11.2255 9.00888 10.9911C8.77446 10.7567 8.45652 10.625 8.125 10.625ZM8.125 15.625H4.375V11.875H8.125V15.625ZM15.625 10.625H11.875C11.5435 10.625 11.2255 10.7567 10.9911 10.9911C10.7567 11.2255 10.625 11.5435 10.625 11.875V15.625C10.625 15.9565 10.7567 16.2745 10.9911 16.5089C11.2255 16.7433 11.5435 16.875 11.875 16.875H15.625C15.9565 16.875 16.2745 16.7433 16.5089 16.5089C16.7433 16.2745 16.875 15.9565 16.875 15.625V11.875C16.875 11.5435 16.7433 11.2255 16.5089 10.9911C16.2745 10.7567 15.9565 10.625 15.625 10.625ZM15.625 15.625H11.875V11.875H15.625V15.625Z" fill="#4D4E4F"></path>
+</svg>
+</div>
+<div class="toolbar-label">Home</div>
+</a>
+</div>
+<div class="toolbar-item">
+<a href="page_my-account.html">
+<div class="toolbar-icon">
+<svg class="icon" fill="none" height="20" stroke="#4D4E4F" stroke-width="1.8" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round"></circle>
+<path d="M4 20c0-4 3.5-7 8-7s8 3 8 7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="toolbar-label">User</div>
+</a>
+</div>
+<div class="toolbar-item">
+<a data-bs-toggle="modal" href="#search">
+<div class="toolbar-icon">
+<svg class="icon" fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.9419 17.058L14.0302 13.1471C15.1639 11.7859 15.7293 10.04 15.6086 8.27263C15.488 6.50524 14.6906 4.85241 13.3823 3.65797C12.074 2.46353 10.3557 1.81944 8.58462 1.85969C6.81357 1.89994 5.12622 2.62143 3.87358 3.87407C2.62094 5.12671 1.89945 6.81406 1.8592 8.5851C1.81895 10.3561 2.46304 12.0745 3.65748 13.3828C4.85192 14.691 6.50475 15.4884 8.27214 15.6091C10.0395 15.7298 11.7854 15.1644 13.1466 14.0306L17.0575 17.9424C17.1156 18.0004 17.1845 18.0465 17.2604 18.0779C17.3363 18.1094 17.4176 18.1255 17.4997 18.1255C17.5818 18.1255 17.6631 18.1094 17.739 18.0779C17.8149 18.0465 17.8838 18.0004 17.9419 17.9424C17.9999 17.8843 18.046 17.8154 18.0774 17.7395C18.1089 17.6636 18.125 17.5823 18.125 17.5002C18.125 17.4181 18.1089 17.3367 18.0774 17.2609C18.046 17.185 17.9999 17.1161 17.9419 17.058ZM3.12469 8.75018C3.12469 7.63766 3.45459 6.55012 4.07267 5.6251C4.69076 4.70007 5.56926 3.9791 6.5971 3.55336C7.62493 3.12761 8.75593 3.01622 9.84707 3.23326C10.9382 3.4503 11.9405 3.98603 12.7272 4.7727C13.5138 5.55937 14.0496 6.56165 14.2666 7.6528C14.4837 8.74394 14.3723 9.87494 13.9465 10.9028C13.5208 11.9306 12.7998 12.8091 11.8748 13.4272C10.9497 14.0453 9.86221 14.3752 8.74969 14.3752C7.25836 14.3735 5.82858 13.7804 4.77404 12.7258C3.71951 11.6713 3.12634 10.2415 3.12469 8.75018Z" fill="#4D4E4F"></path>
+</svg>
+</div>
+<div class="toolbar-label">Search</div>
+</a>
+</div>
+<div class="toolbar-item">
+<a href="page_wishlist.html">
+<div class="toolbar-icon">
+<svg class="icon" fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4215 4.45326C16.5724 3.60627 15.4225 3.12997 14.2231 3.1285C13.0238 3.12704 11.8727 3.60054 11.0215 4.44545L9.99965 5.39467L8.97699 4.44232C8.12602 3.59373 6.9728 3.11795 5.77103 3.11963C4.56926 3.12132 3.41738 3.60034 2.56879 4.45131C1.7202 5.30228 1.24441 6.4555 1.2461 7.65727C1.24778 8.85904 1.7268 10.0109 2.57777 10.8595L9.55824 17.9423C9.6164 18.0014 9.68572 18.0483 9.76217 18.0803C9.83862 18.1123 9.92067 18.1288 10.0036 18.1288C10.0864 18.1288 10.1685 18.1123 10.2449 18.0803C10.3214 18.0483 10.3907 18.0014 10.4489 17.9423L17.4215 10.8595C18.2707 10.0098 18.7477 8.85768 18.7477 7.65639C18.7477 6.45509 18.2707 5.30296 17.4215 4.45326ZM16.5348 9.98139L9.99965 16.6095L3.46059 9.97514C2.8452 9.35975 2.49948 8.52511 2.49948 7.65482C2.49948 6.78454 2.8452 5.9499 3.46059 5.33451C4.07597 4.71913 4.91061 4.37341 5.7809 4.37341C6.65118 4.37341 7.48583 4.71913 8.10121 5.33451L8.11684 5.35014L9.57387 6.7056C9.68953 6.81324 9.84166 6.87307 9.99965 6.87307C10.1576 6.87307 10.3098 6.81324 10.4254 6.7056L11.8825 5.35014L11.8981 5.33451C12.5139 4.71954 13.3488 4.37438 14.219 4.37497C15.0893 4.37555 15.9237 4.72184 16.5387 5.33764C17.1537 5.95344 17.4988 6.78831 17.4983 7.6586C17.4977 8.52888 17.1514 9.36329 16.5356 9.97826L16.5348 9.98139Z" fill="#4D4E4F"></path>
+</svg>
+<!-- <div class="toolbar-count">1</div> -->
+</div>
+<div class="toolbar-label">Wishlist</div>
+</a>
+</div>
+<div class="toolbar-item">
+<a data-bs-toggle="modal" href="#shoppingCart">
+<div class="toolbar-icon">
+<svg class="icon" fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.75 8.23389V4.48389C13.75 3.48932 13.3549 2.5355 12.6517 1.83224C11.9484 1.12897 10.9946 0.733887 10 0.733887C9.00544 0.733887 8.05161 1.12897 7.34835 1.83224C6.64509 2.5355 6.25 3.48932 6.25 4.48389V8.23389M3.4375 6.35889H16.5625L17.5 17.6089H2.5L3.4375 6.35889Z" stroke="#4D4E4F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2">
+</path>
+</svg>
+</div>
+<div class="toolbar-label">Cart</div>
+</a>
+</div>
+</div>
+<!-- /toolbar-bottom -->
+
+<!-- auto popup  -->
+<!-- /auto popup  -->
+<!-- search -->
+<div>
+<div wire:id="S1gMm6t8wWSK6jwX4r1B" wire:initial-data='{"fingerprint":{"id":"S1gMm6t8wWSK6jwX4r1B","name":"common.dynamic-widget","locale":"en","path":"products","method":"GET","v":"acj"},"effects":{"listeners":[]},"serverMemo":{"children":[],"errors":[],"htmlHash":"f2d65e9d","data":{"type":"home-search-1","dataId":null,"file":"search","search":null,"limit":2},"dataMeta":[],"checksum":"095821428593d9fc7f6beaa5db0a08cd71c021e700618150067aebcd631e779e"}}'>
+<div class="modal fade modal-search" id="search" wire:ignore.self="">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="d-flex justify-content-between align-items-center">
+<h5>Search</h5>
+<span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+</div>
+<form class="form-search">
+<fieldset class="text">
+<input aria-required="true" class="" name="text" placeholder="Searching..." required="" tabindex="0" type="text" value="" wire:model="search"/>
+</fieldset>
+<button class="" type="submit">
+<svg class="icon" fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#181818" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M21.35 21.0004L17 16.6504" stroke="#181818" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</form>
+<div>
+<h5 class="mb_16">Feature keywords Today</h5>
+<ul class="list-tags">
+<li><a class="radius-60 link" href="javascript:;" wire:click="$set('search', '')">
+</a></li>
+</ul>
+</div>
+<div>
+<h6 class="mb_16">Top Results</h6>
+<div class="tf-grid-layout tf-col-2 lg-col-3 xl-col-4">
 <div class="fl-item card-product card-product-size wow fadeInUp" data-wow-delay="0.2s">
 <div class="card-product-wrapper">
 <a class="product-img" href="product_ruby-stone-pendant-necklace-set-UoPTd.html">
