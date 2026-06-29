@@ -936,7 +936,7 @@
 </a>
 <a class="category-card" href="/shop">
 <div class="img-wrapper">
-<img alt="Hair Accessories" src="/assets/images/HICdSuw1hk76WxtxPnJvemCB9UzHzrvdz8-1782126320.PNG"/>
+<img alt="Hair Accessories" src="/assets/images/0NG1XK3kJLeG0FSW833AYE3Z0bZHRLQSwS-1780122583.jpeg"/>
 </div>
 <p class="category-name">
                         Hair Accessories
