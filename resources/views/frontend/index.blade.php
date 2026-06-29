@@ -486,7 +486,7 @@
               "@@context": "https://schema.org",
               "@@type": "Store",
               "name": "madeliadesigns",
-              "image": "https://madeliadesigns.com/images/brands/I9uMBss51oRgkCJSSWlcQGTPz9r4vqvquN-1778432057.png",
+              "image": "/assets/images/I9uMBss51oRgkCJSSWlcQGTPz9r4vqvquN-1778432057.png",
               "address": {
                 "@@type": "PostalAddress",
                 "streetAddress": "",
@@ -873,7 +873,7 @@
 <div class="swiper-wrapper">
 <div class="swiper-slide">
 <div class="wrap-slider">
-<img alt="fashion-slideshow" src="https://madeliadesigns.com/images/categories/IfkYYDdKgokGz1eGRNUKPk68xoHsNWFlws-1778527672.jpg"/>
+<img alt="fashion-slideshow" src="/assets/images/IfkYYDdKgokGz1eGRNUKPk68xoHsNWFlws-1778527672.jpg"/>
 <div class="box-content">
 <div class="content-slider">
 <div class="box-title-slider">
@@ -904,7 +904,7 @@
 <div class="category-grid">
 <a class="category-card" href="/shop">
 <div class="img-wrapper">
-<img alt="Necklace Sets and Chokers" src="https://madeliadesigns.com/images/categories/xjWAvmzTroNoeieXNO0g5gbnQDY57ENnYJ-1778928398.jpg"/>
+<img alt="Necklace Sets and Chokers" src="/assets/images/xjWAvmzTroNoeieXNO0g5gbnQDY57ENnYJ-1778928398.jpg"/>
 </div>
 <p class="category-name">
                         Necklace Sets and Chokers
@@ -912,7 +912,7 @@
 </a>
 <a class="category-card" href="/shop">
 <div class="img-wrapper">
-<img alt="Mangalsutra" src="https://madeliadesigns.com/images/categories/ingAP9tvT8yXnyUpZVCRTVk3NBLyD7rPQT-1778928099.jpg"/>
+<img alt="Mangalsutra" src="/assets/images/ingAP9tvT8yXnyUpZVCRTVk3NBLyD7rPQT-1778928099.jpg"/>
 </div>
 <p class="category-name">
                         Mangalsutra
@@ -920,7 +920,7 @@
 </a>
 <a class="category-card" href="/shop">
 <div class="img-wrapper">
-<img alt="Harams" src="https://madeliadesigns.com/images/categories/yoHrtMyARqJiUYbQgXTOd0Ke95THnhGmz1-1778927717.jpg"/>
+<img alt="Harams" src="/assets/images/yoHrtMyARqJiUYbQgXTOd0Ke95THnhGmz1-1778927717.jpg"/>
 </div>
 <p class="category-name">
                         Harams
@@ -928,7 +928,7 @@
 </a>
 <a class="category-card" href="/shop">
 <div class="img-wrapper">
-<img alt="Invisible Chains and Pendants" src="https://madeliadesigns.com/images/categories/hZLGIusXBye8KsgYr0gfWf0Slu11qk1sfC-1778928789.jpg"/>
+<img alt="Invisible Chains and Pendants" src="/assets/images/hZLGIusXBye8KsgYr0gfWf0Slu11qk1sfC-1778928789.jpg"/>
 </div>
 <p class="category-name">
                         Invisible Chains and Pendants
@@ -936,7 +936,7 @@
 </a>
 <a class="category-card" href="/shop">
 <div class="img-wrapper">
-<img alt="Hair Accessories" src="https://madeliadesigns.com/images/categories/HICdSuw1hk76WxtxPnJvemCB9UzHzrvdz8-1782126320.PNG"/>
+<img alt="Hair Accessories" src="/assets/images/HICdSuw1hk76WxtxPnJvemCB9UzHzrvdz8-1782126320.PNG"/>
 </div>
 <p class="category-name">
                         Hair Accessories
@@ -944,7 +944,7 @@
 </a>
 <a class="category-card" href="/shop">
 <div class="img-wrapper">
-<img alt="Saree" src="https://madeliadesigns.com/images/categories/2C5U9VsbnS0E9CKs8f3sr9szSF8vJwWLxC-1782126036.jpeg"/>
+<img alt="Saree" src="/assets/images/2C5U9VsbnS0E9CKs8f3sr9szSF8vJwWLxC-1782126036.jpeg"/>
 </div>
 <p class="category-name">
                         Saree

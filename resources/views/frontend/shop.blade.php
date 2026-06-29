@@ -20,8 +20,8 @@
 <link href="/assets/css/JIHS5y7YJJPp.css?v=637" rel="stylesheet" type="text/css"/>
 <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <!-- Favicon and Touch Icons  -->
-<link href="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" rel="shortcut icon"/>
-<link href="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" rel="apple-touch-icon-precomposed"/>
+<link href="/assets/images/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" rel="shortcut icon"/>
+<link href="/assets/images/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" rel="apple-touch-icon-precomposed"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -327,7 +327,7 @@
               "@@context": "https://schema.org",
               "@@type": "Store",
               "name": "madeliadesigns",
-              "image": "/images/brands/I9uMBss51oRgkCJSSWlcQGTPz9r4vqvquN-1778432057.png",
+              "image": "/assets/images/I9uMBss51oRgkCJSSWlcQGTPz9r4vqvquN-1778432057.png",
               "address": {
                 "@@type": "PostalAddress",
                 "streetAddress": "",

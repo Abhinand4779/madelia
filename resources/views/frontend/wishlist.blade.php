@@ -35,7 +35,7 @@
             <!-- TOP LOGO ROW -->
             <div style="text-align: center; padding: 1rem 0 0.2rem 0; border-bottom: 1px solid rgba(212,175,55,0.15);">
                 <a href="/" style="display: inline-block; text-decoration: none;">
-                    <img src="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia" style="height: 130px; margin-top: -15px; margin-bottom: -15px; max-width: 100%; object-fit: contain; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="/assets/images/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia" style="height: 130px; margin-top: -15px; margin-bottom: -15px; max-width: 100%; object-fit: contain; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
             </div>
             

@@ -51,7 +51,7 @@
             <!-- TOP LOGO ROW -->
             <div style="text-align: center; padding: 1rem 0 0.2rem 0; border-bottom: 1px solid rgba(212,175,55,0.15);">
                 <a href="/" style="display: inline-block; text-decoration: none;">
-                    <img src="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia" style="height: 130px; margin-top: -15px; margin-bottom: -15px; max-width: 100%; object-fit: contain; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="/assets/images/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia" style="height: 130px; margin-top: -15px; margin-bottom: -15px; max-width: 100%; object-fit: contain; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
             </div>
             
@@ -136,7 +136,7 @@
                     <!-- Right: Image -->
                     <div style="flex: 1; min-width: 300px; position: relative; text-align: center;">
                         <div style="position: absolute; top: 20px; left: 20px; width: 100%; height: 100%; border: 2px solid #d4af37; z-index: 0; border-radius: 10px; opacity: 0.5;"></div>
-                        <img src="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia Brand" style="width: 100%; max-width: 400px; height: auto; position: relative; z-index: 1; object-fit: contain; padding: 2rem; background: rgba(255,255,255,0.05); box-shadow: 0 15px 40px rgba(0,0,0,0.5); border-radius: 10px; backdrop-filter: blur(5px);">
+                        <img src="/assets/images/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia Brand" style="width: 100%; max-width: 400px; height: auto; position: relative; z-index: 1; object-fit: contain; padding: 2rem; background: rgba(255,255,255,0.05); box-shadow: 0 15px 40px rgba(0,0,0,0.5); border-radius: 10px; backdrop-filter: blur(5px);">
                     </div>
                     
                 </div>
