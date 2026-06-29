@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Madelia</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <style>
+        /* Loading Time & Image Optimization */
+        .about-banner {
+            height: 45vh;
+            /* Reduced from 60vh */
+            max-height: 400px;
+        }
+
+        .img-side img {
+            max-width: 300px;
+            /* Prevent oversized brand logo */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Static Navbar -->
+        <nav class="navbar-container" id="main-nav" style="padding: 0; background-color: rgb(15, 34, 48); box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+            
+            <!-- PROMO BANNER MARQUEE -->
+            <div class="promo-banner-marquee">
+                <div class="marquee-content">
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                </div>
+            </div>
+
+            <!-- TOP LOGO ROW -->
+            <div style="text-align: center; padding: 1rem 0 0.2rem 0; border-bottom: 1px solid rgba(212,175,55,0.15);">
+                <a href="/" style="display: inline-block; text-decoration: none;">
+                    <img src="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia" style="height: 130px; margin-top: -15px; margin-bottom: -15px; max-width: 100%; object-fit: contain; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+            </div>
+            
+            <!-- BOTTOM NAV ROW -->
+            <div class="navbar-wrapper" style="padding: 0.5rem 5%; justify-content: space-between; max-width: 1400px; margin: 0 auto; display: flex; align-items: center;">
+                
+                <div style="display: flex; align-items: center;">
+                    <button class="mobile-toggle" id="mobile-toggle" style="margin-right: 15px;"><i class="bi bi-list"></i></button>
+                    <div class="navbar-links" id="navbar-links"></div>
+                </div>
+                
+                <div class="navbar-icons" style="margin-left: auto;">
+                    <style>
+                        @media (max-width: 992px) {
+                            .nav-item.country-selector .dropdown {
+                                position: absolute !important;
+                                display: none !important;
+                                top: 100% !important;
+                                left: 0 !important;
+                                background: #111;
+                                padding: 10px;
+                                z-index: 2000;
+                            }
+                            .nav-item.country-selector:hover .dropdown {
+                                display: block !important;
+                            }
+                        }
+                    </style>
+                    <div class="nav-item country-selector" style="position: relative; height: 100%; display: flex; align-items: center; margin-right: 15px;">
+                        <a href="#" class="nav-link country-nav-label" style="text-transform: none; letter-spacing: normal;">Sweden | INR
+                            ₹ <i class="bi bi-chevron-down ms-1" style="font-size:0.7rem;"></i></a>
+                        <ul class="dropdown" style="padding: 10px; width: 220px; left: 0 !important;">
+                            <li style="padding: 0 10px 10px 10px; border-bottom: 1px solid #eee; margin-bottom: 5px;">
+                                <div style="border: 1px solid #000; padding: 5px;">
+                                    <input type="text" class="country-search-input" placeholder="Search" style="border: none; outline: none; width: 100%; font-size: 0.9rem;">
+                                </div>
+                            </li>
+                            <li class="country-dropdown-list" style="max-height: 200px; overflow-y: auto;"></li>
+                        </ul>
+                    </div>
+                    <a href="profile.html" class="icon-link"><i class="bi bi-person"></i></a>
+                    <button class="icon-button" id="search-toggle"><i class="bi bi-search"></i></button>
+                    <a href="wishlist.html" class="icon-link"><i class="bi bi-heart"></i></a>
+                    <a href="/cart" class="icon-link cart-icon">
+                        <i class="bi bi-handbag"></i>
+                        <span class="cart-badge" id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            <div class="search-overlay" id="search-overlay">
+                <div class="search-container">
+                    <form class="search-form" id="search-form">
+                        <input type="text" placeholder="Search for products..." id="search-input">
+                        <button type="submit" class="search-submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <button class="search-close" id="search-close"><i class="bi bi-x-lg"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="about-page" style="background-color: #0f2230; color: #fff; font-family: 'Montserrat', sans-serif;">
+            <header style="height: 60vh; min-height: 400px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('assets/About/Banner.jpg'); background-size: cover; background-position: center; filter: brightness(0.4);"></div>
+                <h1 style="position: relative; color: #d4af37; font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: 10px; text-transform: uppercase; font-weight: 300; z-index: 2; text-align: center;">About Us</h1>
+            </header>
+
+            <section style="padding: 6rem 5%;">
+                <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 4rem;">
+                    
+                    <!-- Left: Text -->
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 style="color: #d4af37; font-size: 2.2rem; margin-bottom: 2rem; font-weight: 400; letter-spacing: 2px;">Elegance Meets Tradition</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 1.5rem; font-weight: 300; opacity: 0.9;">
+                            Madelia was born out of a passion for timeless elegance and the rich heritage of handcrafted jewelry. Founded in 2022, we've dedicated ourselves to creating pieces that don't just accessorize but tell a story.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 2.5rem; font-weight: 300; opacity: 0.9;">
+                            Our philosophy is simple: Luxury should be accessible without compromising on quality. Every piece in our collection is meticulously crafted with high-grade plating and an eye for detail that ensures it stands the test of time.
+                        </p>
+                        <a href="our-story.html" style="display: inline-block; padding: 12px 30px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; font-weight: 300; letter-spacing: 2px; transition: all 0.3s;" onmouseover="this.style.background='#d4af37'; this.style.color='#0f2230';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">READ OUR STORY</a>
+                    </div>
+
+                    <!-- Right: Image -->
+                    <div style="flex: 1; min-width: 300px; position: relative; text-align: center;">
+                        <div style="position: absolute; top: 20px; left: 20px; width: 100%; height: 100%; border: 2px solid #d4af37; z-index: 0; border-radius: 10px; opacity: 0.5;"></div>
+                        <img src="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia Brand" style="width: 100%; max-width: 400px; height: auto; position: relative; z-index: 1; object-fit: contain; padding: 2rem; background: rgba(255,255,255,0.05); box-shadow: 0 15px 40px rgba(0,0,0,0.5); border-radius: 10px; backdrop-filter: blur(5px);">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section style="background-color: #0b1924; padding: 6rem 5%; text-align: center;">
+                <div style="max-width: 1200px; margin: 0 auto;">
+                    <h2 style="color: #d4af37; font-size: 2rem; margin-bottom: 4rem; font-weight: 300; letter-spacing: 3px;">Why Choose Madelia</h2>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+                        
+                        <!-- Feature 1 -->
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.2); padding: 3rem 2rem; border-radius: 10px; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-10px)'; this.style.borderColor='#d4af37';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(212,175,55,0.2)';">
+                            <i class="bi bi-gem" style="font-size: 2.5rem; color: #d4af37; margin-bottom: 1.5rem; display: block;"></i>
+                            <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 1rem; font-weight: 400; letter-spacing: 1px;">Premium Quality</h3>
+                            <p style="color: #aaa; font-size: 1rem; line-height: 1.6; font-weight: 300;">Hand-picked materials and artisans who pour their heart into every detail.</p>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.2); padding: 3rem 2rem; border-radius: 10px; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-10px)'; this.style.borderColor='#d4af37';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(212,175,55,0.2)';">
+                            <i class="bi bi-stars" style="font-size: 2.5rem; color: #d4af37; margin-bottom: 1.5rem; display: block;"></i>
+                            <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 1rem; font-weight: 400; letter-spacing: 1px;">Unique Designs</h3>
+                            <p style="color: #aaa; font-size: 1rem; line-height: 1.6; font-weight: 300;">Signature collections that blend traditional motifs with contemporary flair.</p>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.2); padding: 3rem 2rem; border-radius: 10px; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-10px)'; this.style.borderColor='#d4af37';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(212,175,55,0.2)';">
+                            <i class="bi bi-heart" style="font-size: 2.5rem; color: #d4af37; margin-bottom: 1.5rem; display: block;"></i>
+                            <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 1rem; font-weight: 400; letter-spacing: 1px;">Customer Centric</h3>
+                            <p style="color: #aaa; font-size: 1rem; line-height: 1.6; font-weight: 300;">We're not just selling jewelry; we're building a community of elegance lovers.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Static Footer -->
+        <footer class="footer" id="main-footer">
+            <div class="footer-top">
+                <div class="footer-column footer-store">
+                    <h3 class="footer-heading-logo">Madelia</h3>
+                    <p class="footer-description">Timeless jewelry that tells your unique story. Handcrafted with
+                        passion and precision.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick links</h3>
+                    <ul class="footer-links">
+                        <li><a href="profile.html">My account</a></li>
+                        <li><a href="/cart">Shopping Cart</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="shipping-return.html">Refund & Returns Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-newsletter">
+                    <h3 class="footer-heading footer-heading-large">Let's get in touch</h3>
+                    <p class="footer-newsletter-text">Subscribe to receive updates, access to exclusive deals, and more.
+                    </p>
+                    <form class="footer-email-form">
+                        <input type="email" placeholder="Enter your email address..." class="footer-email-input"
+                            required>
+                        <button type="submit" class="footer-email-btn">&rarr;</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024, Madelia. All Rights Reserved.</p>
+                <a href="https://www.instagram.com/madeliastory_byreshma?igsh=MTYwcXhvb2Y2MjQybQ==" target="_blank" class="footer-instagram"><i class="bi bi-instagram"></i></a>
+                <p class="footer-credit">Handcrafted with Love</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/config.js?v=3" defer></script>
+    <script src="/js/auth.js?v=3" defer></script>
+    <script src="/js/site.js?v=3" defer></script>
+    <script src="/js/components.js?v=3" defer></script>
+    <script src="/js/currency.js?v=3"></script>
+</body>
+
+</html>
+

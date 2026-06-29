@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Policy - Madelia</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <style>
+        /* Loading Time & Image Optimization */
+        .about-banner {
+            height: 45vh;
+            /* Reduced from 60vh */
+            max-height: 400px;
+        }
+
+        .img-side img {
+            max-width: 300px;
+            /* Prevent oversized brand logo */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Static Navbar -->
+        <nav class="navbar-container" id="main-nav" style="padding: 0; background-color: rgb(15, 34, 48); box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+            
+            <!-- PROMO BANNER MARQUEE -->
+            <div class="promo-banner-marquee">
+                <div class="marquee-content">
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                </div>
+            </div>
+
+            <!-- TOP LOGO ROW -->
+            <div style="text-align: center; padding: 1rem 0 0.2rem 0; border-bottom: 1px solid rgba(212,175,55,0.15);">
+                <a href="/" style="display: inline-block; text-decoration: none;">
+                    <img src="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia" style="height: 130px; margin-top: -15px; margin-bottom: -15px; max-width: 100%; object-fit: contain; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+            </div>
+            
+            <!-- BOTTOM NAV ROW -->
+            <div class="navbar-wrapper" style="padding: 0.5rem 5%; justify-content: space-between; max-width: 1400px; margin: 0 auto; display: flex; align-items: center;">
+                
+                <div style="display: flex; align-items: center;">
+                    <button class="mobile-toggle" id="mobile-toggle" style="margin-right: 15px;"><i class="bi bi-list"></i></button>
+                    <div class="navbar-links" id="navbar-links"></div>
+                </div>
+                
+                <div class="navbar-icons" style="margin-left: auto;">
+                    <style>
+                        @media (max-width: 992px) {
+                            .nav-item.country-selector .dropdown {
+                                position: absolute !important;
+                                display: none !important;
+                                top: 100% !important;
+                                left: 0 !important;
+                                background: #111;
+                                padding: 10px;
+                                z-index: 2000;
+                            }
+                            .nav-item.country-selector:hover .dropdown {
+                                display: block !important;
+                            }
+                        }
+                    </style>
+                    <div class="nav-item country-selector" style="position: relative; height: 100%; display: flex; align-items: center; margin-right: 15px;">
+                        <a href="#" class="nav-link country-nav-label" style="text-transform: none; letter-spacing: normal;">Sweden | INR
+                            ₹ <i class="bi bi-chevron-down ms-1" style="font-size:0.7rem;"></i></a>
+                        <ul class="dropdown" style="padding: 10px; width: 220px; left: 0 !important;">
+                            <li style="padding: 0 10px 10px 10px; border-bottom: 1px solid #eee; margin-bottom: 5px;">
+                                <div style="border: 1px solid #000; padding: 5px;">
+                                    <input type="text" class="country-search-input" placeholder="Search" style="border: none; outline: none; width: 100%; font-size: 0.9rem;">
+                                </div>
+                            </li>
+                            <li class="country-dropdown-list" style="max-height: 200px; overflow-y: auto;"></li>
+                        </ul>
+                    </div>
+                    <a href="profile.html" class="icon-link"><i class="bi bi-person"></i></a>
+                    <button class="icon-button" id="search-toggle"><i class="bi bi-search"></i></button>
+                    <a href="wishlist.html" class="icon-link"><i class="bi bi-heart"></i></a>
+                    <a href="/cart" class="icon-link cart-icon">
+                        <i class="bi bi-handbag"></i>
+                        <span class="cart-badge" id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            <div class="search-overlay" id="search-overlay">
+                <div class="search-container">
+                    <form class="search-form" id="search-form">
+                        <input type="text" placeholder="Search for products..." id="search-input">
+                        <button type="submit" class="search-submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <button class="search-close" id="search-close"><i class="bi bi-x-lg"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="policy-page" style="padding: 6rem 5% 4rem; background: #0f2230; color: #fff; font-family: 'Montserrat', sans-serif;">
+            <div class="policy-container" style="max-width: 900px; margin: 0 auto; line-height: 1.8;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 2.5rem; border-bottom: 1.5px solid #d4af37; padding-bottom: 1rem; color: #d4af37;">Shipping Policy</h1>
+                
+                <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">At Hue Story by Reshma, we take great care in packing and dispatching your orders to ensure they arrive safely and beautifully.</p>
+
+                <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem; color: #d4af37;">Processing Time</h2>
+                <ul style="margin-bottom: 1.5rem; padding-left: 2rem;">
+                    <li style="margin-bottom: 0.8rem;">Ready-stock items are dispatched within 1–2 business days after payment received.</li>
+                    <li style="margin-bottom: 0.8rem;">Pre-order and custom-made items will have individual processing times depends on the product.</li>
+                </ul>
+                <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">During peak periods, dispatch times may be slightly longer.</p>
+
+                <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem; color: #d4af37;">Delivery Timeframes</h2>
+                <ul style="margin-bottom: 1.5rem; padding-left: 2rem;">
+                    <li style="margin-bottom: 0.8rem;">Standard Shipping: 3–7 business days</li>
+                    <li style="margin-bottom: 0.8rem;">Express Shipping: 1–4 business days</li>
+                </ul>
+                <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">Please note that delivery times are estimates and may vary depending on your location and carrier delays.</p>
+
+                <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem; color: #d4af37;">Tracking</h2>
+                <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">Once your order has been dispatched, you will receive a tracking number via email or SMS to monitor your shipment.</p>
+
+                <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem; color: #d4af37;">Incorrect Address Details</h2>
+                <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">Please ensure all shipping details is correct before placing your order. We are not responsible for delays or lost parcels resulting from incorrect address details provided by the customer.</p>
+
+                <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem; color: #d4af37;">Lost or Damaged Parcels</h2>
+                <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">If your order arrives damaged or is lost in transit, please contact us within 7 days of the expected delivery date, and we will do our best to assist.</p>
+
+                <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem; color: #d4af37;">Contact Us</h2>
+                <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">For any shipping enquiries, please contact us via:<br>
+                Email: <a href="mailto:madeliastorybyreshma@gmail.com" style="color: #fff; text-decoration: underline;">madeliastorybyreshma@gmail.com</a><br>
+                Instagram: <a href="https://www.instagram.com/madeliastory_byreshma?igsh=MTYwcXhvb2Y2MjQybQ==" target="_blank" style="color: #fff; text-decoration: underline;">@madeliastorybyreshma</a></p>
+
+                <div style="background: rgba(212,175,55,0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(212,175,55,0.3); margin-top: 3rem;">
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem;">✨ <strong>Free Standard Shipping on all orders over $150 AUD</strong></p>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem;">🚚  <strong>Standard Shipping:</strong> $15 AUD (with Tracking)</p>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem;">⚡ <strong>Express Shipping:</strong> $19 AUD (with Tracking)</p>
+                </div>
+
+                <p style="margin-top: 3rem; font-size: 1.1rem; text-align: center; font-style: italic;">Thank you for shopping with Hue Story by Reshma. We appreciate your support and look forward to being part of your style story. 💛</p>
+            </div>
+        </main>
+
+        <!-- Static Footer -->
+        <footer class="footer" id="main-footer">
+            <div class="footer-top">
+                <div class="footer-column footer-store">
+                    <h3 class="footer-heading-logo">Madelia</h3>
+                    <p class="footer-description">Timeless jewelry that tells your unique story. Handcrafted with
+                        passion and precision.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick links</h3>
+                    <ul class="footer-links">
+                        <li><a href="profile.html">My account</a></li>
+                        <li><a href="/cart">Shopping Cart</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="shipping-return.html">Refund & Returns Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-newsletter">
+                    <h3 class="footer-heading footer-heading-large">Let's get in touch</h3>
+                    <p class="footer-newsletter-text">Subscribe to receive updates, access to exclusive deals, and more.
+                    </p>
+                    <form class="footer-email-form">
+                        <input type="email" placeholder="Enter your email address..." class="footer-email-input"
+                            required>
+                        <button type="submit" class="footer-email-btn">&rarr;</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024, Madelia. All Rights Reserved.</p>
+                <a href="https://www.instagram.com/madeliastory_byreshma?igsh=MTYwcXhvb2Y2MjQybQ==" target="_blank" class="footer-instagram"><i class="bi bi-instagram"></i></a>
+                <p class="footer-credit">Handcrafted with Love</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/config.js?v=3" defer></script>
+    <script src="/js/auth.js?v=3" defer></script>
+    <script src="/js/site.js?v=3" defer></script>
+    <script src="/js/components.js?v=3" defer></script>
+    <script src="/js/currency.js?v=3"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Madelia</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <style>
+        .policy-page {
+            padding: 6rem 5% 4rem;
+            background: var(--off-white);
+        }
+
+        .policy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        .policy-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1.5px solid var(--gold);
+            padding-bottom: 1rem;
+            color: var(--black);
+        }
+
+        .policy-container h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--gold);
+        }
+
+        .policy-container p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .policy-container ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .policy-container li {
+            margin-bottom: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .policy-page {
+                padding: 4rem 1.5rem;
+            }
+
+            .policy-container h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar-container" id="main-nav" style="padding: 0; background-color: rgb(15, 34, 48); box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+            
+            <!-- PROMO BANNER MARQUEE -->
+            <div class="promo-banner-marquee">
+                <div class="marquee-content">
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                    <span>FREE SHIPPING on orders above 899 | COD Available | 10,000+ Happy Customers</span>
+                </div>
+            </div>
+
+            <!-- TOP LOGO ROW -->
+            <div style="text-align: center; padding: 1rem 0 0.2rem 0; border-bottom: 1px solid rgba(212,175,55,0.15);">
+                <a href="/" style="display: inline-block; text-decoration: none;">
+                    <img src="/images/brands/fo3dLCSUuNSadjsAJAGGdptbGXZIa7Jb5S-1778432057.png" alt="Madelia" style="height: 130px; margin-top: -15px; margin-bottom: -15px; max-width: 100%; object-fit: contain; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+            </div>
+            
+            <!-- BOTTOM NAV ROW -->
+            <div class="navbar-wrapper" style="padding: 0.5rem 5%; justify-content: space-between; max-width: 1400px; margin: 0 auto; display: flex; align-items: center;">
+                
+                <div style="display: flex; align-items: center;">
+                    <button class="mobile-toggle" id="mobile-toggle" style="margin-right: 15px;"><i class="bi bi-list"></i></button>
+                    <div class="navbar-links" id="navbar-links"></div>
+                </div>
+                
+                <div class="navbar-icons" style="margin-left: auto;">
+                    <style>
+                        @media (max-width: 992px) {
+                            .nav-item.country-selector .dropdown {
+                                position: absolute !important;
+                                display: none !important;
+                                top: 100% !important;
+                                left: 0 !important;
+                                background: #111;
+                                padding: 10px;
+                                z-index: 2000;
+                            }
+                            .nav-item.country-selector:hover .dropdown {
+                                display: block !important;
+                            }
+                        }
+                    </style>
+                    <div class="nav-item country-selector" style="position: relative; height: 100%; display: flex; align-items: center; margin-right: 15px;">
+                        <a href="#" class="nav-link country-nav-label" style="text-transform: none; letter-spacing: normal;">Sweden | INR
+                            ₹ <i class="bi bi-chevron-down ms-1" style="font-size:0.7rem;"></i></a>
+                        <ul class="dropdown" style="padding: 10px; width: 220px; left: 0 !important;">
+                            <li style="padding: 0 10px 10px 10px; border-bottom: 1px solid #eee; margin-bottom: 5px;">
+                                <div style="border: 1px solid #000; padding: 5px;">
+                                    <input type="text" class="country-search-input" placeholder="Search" style="border: none; outline: none; width: 100%; font-size: 0.9rem;">
+                                </div>
+                            </li>
+                            <li class="country-dropdown-list" style="max-height: 200px; overflow-y: auto;"></li>
+                        </ul>
+                    </div>
+                    <a href="profile.html" class="icon-link"><i class="bi bi-person"></i></a>
+                    <button class="icon-button" id="search-toggle"><i class="bi bi-search"></i></button>
+                    <a href="wishlist.html" class="icon-link"><i class="bi bi-heart"></i></a>
+                    <a href="/cart" class="icon-link cart-icon">
+                        <i class="bi bi-handbag"></i>
+                        <span class="cart-badge" id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            <div class="search-overlay" id="search-overlay">
+                <div class="search-container">
+                    <form class="search-form" id="search-form">
+                        <input type="text" placeholder="Search for products..." id="search-input">
+                        <button type="submit" class="search-submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <button class="search-close" id="search-close"><i class="bi bi-x-lg"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="policy-page">
+            <div class="policy-container">
+                <h1>Privacy Policy</h1>
+                <p>Last updated: March 2026</p>
+
+                <p>Welcome to Madelia. We appreciate your trust in us and are committed to protecting your personal
+                    information. This Privacy Policy describes how we collect, use, and share your personal information
+                    when you visit or make a purchase from astrabash.com.</p>
+
+                <h2>Information We Collect</h2>
+                <p>When you visit the Site, we automatically collect certain information about your device, including
+                    information about your web browser, IP address, time zone, and some of the cookies that are
+                    installed on your device.</p>
+                <ul>
+                    <li><strong>Device Information:</strong> Technical details about your browser and device.</li>
+                    <li><strong>Order Information:</strong> When you make a purchase, we collect your name, billing
+                        address, shipping address, payment information, email address, and phone number.</li>
+                </ul>
+
+                <h2>How We Use Your Information</h2>
+                <p>We use the Order Information that we collect generally to fulfill any orders placed through the Site
+                    (including processing your payment information, arranging for shipping, and providing you with
+                    invoices and/or order confirmations).</p>
+                <p>Additionally, we use this Order Information to communicate with you and screen our orders for
+                    potential risk or fraud.</p>
+
+                <h2>Sharing Your Information</h2>
+                <p>We share your Personal Information with third parties to help us use your Personal Information, as
+                    described above. For example, we use Google Analytics to help us understand how our customers use
+                    the Site.</p>
+
+                <h2>Data Security</h2>
+                <p>We take reasonable precautions and follow industry best practices to make sure your personal
+                    information is not inappropriately lost, misused, accessed, disclosed, altered or destroyed.</p>
+
+                <h2>Contact Us</h2>
+                <p>If you have any questions about our privacy practices, please contact us at support@astrabash.com.
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer" id="main-footer"></footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/config.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/components.js"></script>
+<script src="/js/currency.js"></script>
+</body>
+
+</html>
+
