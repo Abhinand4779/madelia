@@ -8,16 +8,38 @@ Route::get('/shop', function () {
     $products = \App\Models\Product::all();
     return view('frontend.shop', compact('products')); 
 })->name('shop');
+
+// Catch-all for category and subcategory pages (points to shop)
+Route::get('/category_{name}', function () { 
+    $products = \App\Models\Product::all();
+    return view('frontend.shop', compact('products')); 
+})->where('name', '.*');
+
+Route::get('/subcategory_{name}', function () { 
+    $products = \App\Models\Product::all();
+    return view('frontend.shop', compact('products')); 
+})->where('name', '.*');
+
+// Product routes
 Route::get('/product', function (\Illuminate\Http\Request $request) { 
     $product = \App\Models\Product::find($request->id);
     if (!$product) abort(404);
     return view('frontend.product', compact('product')); 
 })->name('product');
+
+Route::get('/product_{name}', function (\Illuminate\Http\Request $request) { 
+    // Fallback if they click an old product link, just load the first product for demo
+    $product = \App\Models\Product::first();
+    if (!$product) abort(404);
+    return view('frontend.product', compact('product')); 
+})->where('name', '.*');
+
 Route::get('/product.html', function (\Illuminate\Http\Request $request) { 
     $product = \App\Models\Product::find($request->id);
     if (!$product) abort(404);
     return view('frontend.product', compact('product')); 
 });
+
 Route::get('/cart.html', function () { return view('frontend.cart'); });
 Route::get('/checkout', function () { return view('frontend.checkout'); })->name('checkout');
 Route::get('/checkout.html', function () { return view('frontend.checkout'); });
@@ -38,7 +60,7 @@ Route::get('/profile.html', function () { return view('frontend.profile'); });
 Route::get('/wishlist', function () { return view('frontend.wishlist'); })->name('wishlist');
 Route::get('/wishlist.html', function () { return view('frontend.wishlist'); });
 Route::get('/shop.html', function () { return view('frontend.shop'); });
-
+Route::get('/login.html', function () { return view('admin.login'); });
 
 // Admin Routes (Cloned Frontend)
 Route::prefix('admin')->group(function () {
